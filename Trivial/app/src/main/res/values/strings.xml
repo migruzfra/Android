@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
+
+    <string name="app_name">Android Trivia</string>
+
+    <string name="main_confirmation">Confirmation</string>
+    <string name="main_quit_game">Are you sure you want to quit the game?</string>
+    <string name="main_yes">Yes</string>
+    <string name="main_no">No</string>
+
+    <string name="title_btnPlay">Play</string>
+    <string name="title_imgTitle">Title</string>
+    <string name="title_mnuAbout">About</string>
+    <string name="title_mnuRules">Rules</string>
+    <string name="title_mnuSettings">Settings</string>
+
+    <string name="rules_lblRules">Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen, and this will also end your game.</string>
+    <string name="rules_imgRules">Rules</string>
+    <string name="rules_title">Rules</string>
+
+    <string name="about_lblRules">Android Trivia will help remind you of important concepts you have learned and will learn in Android development.\n\nConsider modifying the questions and graphics to make this game your own!</string>
+    <string name="about_imgAbout">About</string>
+    <string name="about_title">About</string>
+
+    <string name="settings_numberOfQuestions">Number of questions</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_showDialog">Show confirmation dialog</string>
+
+    <string name="game_btnSubmit">Submit</string>
+    <string name="game_imgQuestion">Question</string>
+    <string name="game_question_title">Question %d/%d</string>
+
+    <string name="game_over_btnTryAgain">Try Again?</string>
+    <string name="game_over_imgGameOver">Game over</string>
+    <string name="game_over_title">Game over</string>
+
+    <string name="game_won_btnNextMatch">Next Match</string>
+    <string name="game_won_imgYouWin">You win</string>
+    <string name="game_won_title">You win</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="img_title_description">Image Title</string>
+    <string name="seekbar">seekbar</string>
+    <string name="switchConfirmation">switchConfirmation</string>
+
+</resources>

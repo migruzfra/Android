@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Administrador de tareas-PR04-Tasks.iml" filepath="$PROJECT_DIR$/.idea/modules/Administrador de tareas-PR04-Tasks.iml" group="PR04-Tasks" />
+      <module fileurl="file://$PROJECT_DIR$/PR04-Tasks.iml" filepath="$PROJECT_DIR$/PR04-Tasks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PR04-Tasks-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PR04-Tasks-app.iml" group="PR04-Tasks/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pr04-tasks-UakimRF91-PR04-Tasks.iml" filepath="$PROJECT_DIR$/pr04-tasks-UakimRF91-PR04-Tasks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/pr04-tasks-UakimRF91-app.iml" filepath="$PROJECT_DIR$/app/pr04-tasks-UakimRF91-app.iml" />
+    </modules>
+  </component>
+</project>

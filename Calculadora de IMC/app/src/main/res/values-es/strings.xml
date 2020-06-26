@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Índice de Masa Corporal</string>
+    <string name="lblWeight">Peso</string>
+    <string name="lblHeight">Altura</string>
+    <string name="btnReset">RESET</string>
+    <string name="btnCalculate">CALCULAR IMC</string>
+    <string name="main_bmi">IMC: %1$.1f %2$s</string>
+    <string name="txtWeight">(kg)</string>
+    <string name="txtHeight">(m)</string>
+    <string name="main_low_weight">Bajo peso</string>
+    <string name="main_normal_weight">Normal</string>
+    <string name="main_overweight">Sobrepeso</string>
+    <string name="main_obesity_grade_1">Obesidad clase 1</string>
+    <string name="main_obesity_grade_2">Obesidad clase 2</string>
+    <string name="main_obesity_grade_3">Obesidad clase 3</string>
+    <string name="main_invalid_weight">Peso no válido</string>
+    <string name="main_invalid_height">Altura no válida</string>
+</resources>

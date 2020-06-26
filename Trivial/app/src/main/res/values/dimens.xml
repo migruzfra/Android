@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="half_margin">4dp</dimen>
+    <dimen name="base_margin">8dp</dimen>
+    <dimen name="double_margin">16dp</dimen>
+    <dimen name="quadruple_margin">32dp</dimen>
+    <dimen name="main_toolbar_elevation">8dp</dimen>
+    <dimen name="image_header_height">192dp</dimen>
+    <dimen name="big_font_size">16sp</dimen>
+</resources>

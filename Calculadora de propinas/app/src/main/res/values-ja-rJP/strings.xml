@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">チップ計算機</string>
+    <string name="lblBill">お勘定</string>
+    <string name="lblPercentage">チップ %</string>
+    <string name="lblTip">チップ</string>
+    <string name="lblTotal">総額</string>
+    <string name="reset">リセット</string>
+    <string name="lblPerDiner">お客様あたり</string>
+    <string name="lblDiners">お客様</string>
+    <string name="lblPerDinerRounded">四捨五入</string>
+    <string name="currencySymbol">¥</string>
+    <string name="default_zero">0.00</string>
+    <string name="default_percentage">10.00</string>
+    <string name="default_diners">1</string>
+    <string name="txtBill">@string/default_zero</string>
+    <string name="txtPercentage">@string/default_percentage</string>
+    <string name="txtTip">@string/default_zero</string>
+    <string name="txtTotal">@string/default_zero</string>
+    <string name="btnResetTip">@string/reset</string>
+    <string name="txtPerDiner">@string/default_zero</string>
+    <string name="txtDiners">@string/default_diners</string>
+    <string name="txtPerDinerRounded">@string/default_zero</string>
+    <string name="btnResetDiners">@string/reset</string>
+    <string name="format_required">%.2f</string>
+    <string name="symbol_percentage">%</string>
+</resources>

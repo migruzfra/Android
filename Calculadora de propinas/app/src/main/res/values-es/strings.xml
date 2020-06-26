@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculadora de propina</string>
+    <string name="lblBill">Cuenta</string>
+    <string name="lblPercentage">Propina %</string>
+    <string name="lblTip">Propina</string>
+    <string name="lblTotal">Total</string>
+    <string name="reset">RESET</string>
+    <string name="lblPerDiner">Por comensal</string>
+    <string name="lblDiners">Comensales</string>
+    <string name="lblPerDinerRounded">Redondeado</string>
+    <string name="currencySymbol">€</string>
+    <string name="default_zero">0.00</string>
+    <string name="default_percentage">10.00</string>
+    <string name="default_diners">1</string>
+    <string name="txtBill">@string/default_zero</string>
+    <string name="txtPercentage">@string/default_percentage</string>
+    <string name="txtTip">@string/default_zero</string>
+    <string name="txtTotal">@string/default_zero</string>
+    <string name="btnResetTip">@string/reset</string>
+    <string name="txtPerDiner">@string/default_zero</string>
+    <string name="txtDiners">@string/default_diners</string>
+    <string name="txtPerDinerRounded">@string/default_zero</string>
+    <string name="btnResetDiners">@string/reset</string>
+    <string name="format_required">%.2f</string>
+    <string name="symbol_percentage">%</string>
+</resources>

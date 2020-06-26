@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="lblWeight">体重</string>
+    <string name="lblHeight">身長</string>
+    <string name="btnReset">リセット</string>
+    <string name="btnCalculate">BMI計算機</string>
+    <string name="main_bmi">BMI: %1$.1f %2$s</string>
+    <string name="txtWeight">(kg)</string>
+    <string name="txtHeight">(m)</string>
+    <string name="main_low_weight">痩せすぎ</string>
+    <string name="main_normal_weight">普通体重 </string>
+    <string name="main_overweight">前肥満</string>
+    <string name="main_obesity_grade_1">肥満（1度）</string>
+    <string name="main_obesity_grade_2">肥満（2度）</string>
+    <string name="main_obesity_grade_3">肥満（3度）</string>
+    <string name="main_invalid_weight">正数を入力してください（0除外）</string>
+    <string name="main_invalid_height">正数を入力してください（0除外）</string>
+</resources>
