@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_margin_half">4dp</dimen>
+    <dimen name="main_margin_1x">8dp</dimen>
+    <dimen name="main_margin_2x">16dp</dimen>
+    <dimen name="main_margin_3x">24dp</dimen>
+    <dimen name="main_margin_4x">32dp</dimen>
+    <dimen name="main_margin_5x">40dp</dimen>
+
+    <dimen name="main_textSize_1x">16sp</dimen>
+    <dimen name="main_textSize_2x">20sp</dimen>
+    <dimen name="main_textSize_3x">24sp</dimen>
+    <dimen name="main_textSize_4x">28sp</dimen>
+    <dimen name="main_textSize_5x">32sp</dimen>
+    <dimen name="main_textSize_6x">50sp</dimen>
+    <dimen name="main_textSize_7x">76sp</dimen>
+
+    <dimen name="main_avatar_background_height">220dp</dimen>
+    <dimen name="main_avatar_size">96dp</dimen>
+    <dimen name="main_marco_size">105dp</dimen>
+    <dimen name="main_next_size">76dp</dimen>
+    <dimen name="card_image_size">58dp</dimen>
+    <dimen name="main_dashboard_background_height">180dp</dimen>
+    <dimen name="main_toolbar_elevation">8dp</dimen>
+</resources>

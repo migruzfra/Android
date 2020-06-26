@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    app:startDestination="@id/titleDestination">
+
+    <fragment
+        android:id="@+id/acknowledgementDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.acknowledgement.AcknowledgementFragment"
+        tools:layout="@layout/acknowledgement_fragment">
+        <action
+            android:id="@+id/navigateToProfile"
+            app:destination="@id/profileDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/titleDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.title.TitleFragment"
+        tools:layout="@layout/title_fragment">
+        <action
+            android:id="@+id/navigateToDashboard"
+            app:destination="@id/dashboardDestination" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/dashboardDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.dashboard.DashboardFragment"
+        android:label="@string/toolbar_title_dashboard"
+        tools:layout="@layout/dashboard_fragment">
+        <action
+            android:id="@+id/navigateToSearchMenu"
+            app:destination="@id/searchMenuDestination" />
+        <action
+            android:id="@+id/navigateToProfile"
+            app:destination="@id/profileDestination" />
+        <action
+            android:id="@+id/navigateToAddRecipe"
+            app:destination="@id/addRecipeDestination" />
+        <action
+            android:id="@+id/navigateToSettings"
+            app:destination="@id/settingsDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.profile.ProfileFragment"
+        android:label="@string/toolbar_title_profile"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/navigateToAddProfile"
+            app:destination="@id/addProfileDestination" />
+        <action
+            android:id="@+id/navigateToEditProfile"
+            app:destination="@id/editProfileDestination" />
+        <action
+            android:id="@+id/navigateToShoppingList"
+            app:destination="@id/shoppingListDestination" />
+        <action
+            android:id="@+id/navigateToDashboard"
+            app:destination="@id/dashboardDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shoppingListDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.profile.shoppingList.ShoppingListFragment"
+        android:label="@string/toolbar_title_shopping_list"
+        tools:layout="@layout/shopping_list_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/addRecipeDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.recipe.add.addRecipe.AddRecipeFragment"
+        android:label="@string/toolbar_title_add_recipe"
+        tools:layout="@layout/add_recipe_fragment">
+        <action
+            android:id="@+id/navigateToAddIngredients"
+            app:destination="@id/addIngredientsDestination"
+            app:popUpTo="@id/dashboardDestination"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addIngredientsDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.recipe.add.addIngredients.AddIngredientsFragment"
+        android:label="@string/toolbar_title_add_ingredients"
+        tools:layout="@layout/add_ingredients_fragment">
+        <argument
+            android:name="codeRecipe"
+            app:argType="long" />
+        <action
+            android:id="@+id/navigateToAddSteps"
+            app:destination="@id/addStepsDestination"
+            app:popUpTo="@id/dashboardDestination"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addStepsDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.recipe.add.addSteps.AddStepsFragment"
+        android:label="@string/toolbar_title_add_steps"
+        tools:layout="@layout/add_steps_fragment">
+        <argument
+            android:name="codeRecipe"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addProfileDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.profile.add.AddProfileFragment"
+        android:label="@string/toolbar_title_add_profile"
+        tools:layout="@layout/add_profile_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.profile.edit.EditProfileFragment"
+        android:label="@string/toolbar_title_edit_profile"
+        tools:layout="@layout/add_profile_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchMenuDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.search.searchmenu.SearchMenuFragment"
+        android:label="@string/toolbar_title_search_menu"
+        tools:layout="@layout/search_menu_fragment" >
+        <action
+            android:id="@+id/navigateToSearchByGroup"
+            app:destination="@id/searchByGroupDestination" />
+        <action
+            android:id="@+id/navigateToSearchByCuisine"
+            app:destination="@id/searchByCuisineDestination" />
+        <action
+            android:id="@+id/navigateToSearchByName"
+            app:destination="@id/searchByNameDestination" />
+        <action
+            android:id="@+id/navigateToOverview"
+            app:destination="@id/overviewDestination"
+            />
+        <action
+            android:id="@+id/navigateToRanking"
+            app:destination="@id/rankingDestination"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchByNameDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.search.searchbyname.SearchByNameFragment"
+        android:label="@string/toolbar_title_search_by_name"
+        tools:layout="@layout/search_by_name_fragment">
+        <action
+            android:id="@+id/navigateToOverview"
+            app:destination="@id/overviewDestination" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/searchByGroupDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.search.searchbygroup.SearchByGroupFragment"
+        android:label="@string/toolbar_title_search_by_group"
+        tools:layout="@layout/search_by_group_fragment">
+        <action
+            android:id="@+id/navigateToOverview"
+            app:destination="@id/overviewDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchByCuisineDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.search.searchbycuisine.SearchByCuisineFragment"
+        android:label="@string/toolbar_title_search_by_cuisine"
+        tools:layout="@layout/search_by_cuisine_fragment">
+        <action
+            android:id="@+id/navigateToOverview"
+            app:destination="@id/overviewDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rankingDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.search.ranking.RankingFragment"
+        android:label="@string/toolbar_title_ranking"
+        tools:layout="@layout/ranking_fragment">
+        <action
+            android:id="@+id/navigateToOverview"
+            app:destination="@id/overviewDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/overviewDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.recipe.overview.OverviewFragment"
+        android:label="@string/toolbar_title_overview"
+        tools:layout="@layout/overview_fragment">
+        <argument
+            android:name="codeRecipe"
+            app:argType="long" />
+        <action
+            android:id="@+id/navigateToSteps"
+            app:destination="@id/stepsDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stepsDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.recipe.steps.StepsFragment"
+        android:label="@string/toolbar_title_steps"
+        tools:layout="@layout/steps_fragment">
+        <action
+            android:id="@+id/navigateToEndRecipe"
+            app:destination="@id/endRecipeDestination"
+            app:popUpTo="@id/dashboardDestination"/>
+        <argument
+            android:name="steps"
+            app:argType="string[]" />
+        <argument
+            android:name="codeRecipe"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/endRecipeDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.recipe.end.EndRecipeFragment"
+        android:label="@string/toolbar_title_end_recipe"
+        tools:layout="@layout/end_recipe_fragment">
+        <action
+            android:id="@+id/navigateToDashboard"
+            app:destination="@id/dashboardDestination" />
+        <argument
+            android:name="codeRecipe"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsDestination"
+        android:name="es.iessaladillo.miguelangelruz.androrecetas.ui.settings.SettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/settings_fragment" />
+
+</navigation>

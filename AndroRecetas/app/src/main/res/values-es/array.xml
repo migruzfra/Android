@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_tips">
+        <item>Consume pan y cereales integrales. Son mas saludables que sin cascara</item>
+        <item>No vayas al super sin lista de la compra. Te ayudara a controlar la compra impulsiva</item>
+        <item>El huevo es una de las mejores proteinas que puedes consumir.</item>
+        <item>Ejercitate a menudo, pero sin excesos</item>
+        <item>Bebe suficiente agua, como minimo dos litros al día</item>
+        <item>Cocina los alimentos al horno o al vapor en lugar de fritos</item>
+        <item>Pide un menu saludable en el restaurante</item>
+        <item>Trata de hacer al menos una nueva receta saludable cada semana</item>
+        <item>Elige patatas al horno en lugar de fritas</item>
+        <item>Al comer, empieza por una ensalada. Te saciara</item>
+        <item>En lugar de tomar zumo de frutas, come la fruta con su carne</item>
+        <item>Cocina en casa</item>
+        <item>Que no te pueda la pereza: Una buena nutricion y ejercicio fisico van de la mano</item>
+        <item>Sustituye los refrescos por agua o refrescos sin azucar</item>
+        <item>No te quedes despierto de noche: lo optimo es dormir 8 horas diarias</item>
+    </string-array>
+</resources>

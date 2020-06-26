@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/toolbar_title_profile" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_avatar_background_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/marco"
+        android:layout_width="@dimen/main_marco_size"
+        android:layout_height="@dimen/main_marco_size"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintEnd_toEndOf="@+id/imgCurrentUser"
+        app:layout_constraintStart_toStartOf="@+id/imgCurrentUser"
+        app:layout_constraintTop_toTopOf="@+id/imgCurrentUser"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCurrentUser"/>
+
+    <ImageView
+        android:id="@+id/imgCurrentUser"
+        android:layout_width="@dimen/main_avatar_size"
+        android:layout_height="@dimen/main_avatar_size"
+        android:layout_marginTop="@dimen/main_margin_3x"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/lblUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margin_3x"
+        android:text="@string/user_selection_no_user_selected"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/main_textSize_4x"
+        app:layout_constraintEnd_toEndOf="@+id/imgCurrentUser"
+        app:layout_constraintStart_toStartOf="@+id/imgCurrentUser"
+        app:layout_constraintTop_toBottomOf="@id/imgCurrentUser" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_edit_white_24dp"
+        android:text="@string/user_selection_btnEdit"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCurrentUser"
+        app:layout_constraintEnd_toStartOf="@+id/imgCurrentUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnShoppingList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_shopping_cart_white_24dp"
+        android:text="@string/user_selection_btnShopping"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCurrentUser"
+        app:layout_constraintStart_toStartOf="@+id/btnEdit"
+        app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_logout_white_24dp"
+        android:text="@string/user_selection_btnLogout"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCurrentUser"
+        app:layout_constraintStart_toEndOf="@+id/imgCurrentUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstUsers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/main_margin_1x"
+        android:background="@color/colorAccent_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imgNoUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user_add_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lstUsers"
+        app:layout_constraintEnd_toEndOf="@+id/lstUsers"
+        app:layout_constraintStart_toStartOf="@+id/lstUsers"
+        app:layout_constraintTop_toTopOf="@+id/lstUsers" />
+
+    <TextView
+        android:id="@+id/lblNoUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margin_half"
+        android:text="@string/user_selection_no_users_yet"
+        app:layout_constraintEnd_toEndOf="@+id/imgNoUsers"
+        app:layout_constraintStart_toStartOf="@+id/imgNoUsers"
+        app:layout_constraintTop_toBottomOf="@+id/imgNoUsers" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/main_margin_2x"
+        android:layout_marginBottom="@dimen/main_margin_2x"
+        android:src="@drawable/ic_user_add_black_24dp"
+        android:tint="@color/white"
+        app:elevation="@dimen/main_margin_1x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="@dimen/main_margin_1x" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

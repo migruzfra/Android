@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_strong">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme"
+        app:title="@string/toolbar_title_add_recipe" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_textSize_2x"
+        android:text="@string/enter_name_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_name_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_shadow_white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toEndOf="@id/guideline90"
+        app:layout_constraintStart_toStartOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/lblName" />
+
+    <TextView
+        android:id="@+id/lblGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_textSize_2x"
+        android:text="@string/enter_group_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toStartOf="@+id/guideline50"
+        app:layout_constraintStart_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Spinner
+        android:id="@+id/spinnerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toStartOf="@+id/guideline50"
+        app:layout_constraintStart_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@id/lblGroup" />
+
+    <TextView
+        android:id="@+id/lblCuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_textSize_2x"
+        android:text="@string/enter_cuisine_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toStartOf="@id/guideline90"
+        app:layout_constraintStart_toEndOf="@+id/guideline50"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Spinner
+        android:id="@+id/spinnerCuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toStartOf="@id/guideline90"
+        app:layout_constraintStart_toEndOf="@+id/guideline50"
+        app:layout_constraintTop_toBottomOf="@id/lblCuisine" />
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_textSize_2x"
+        android:text="@string/enter_description_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toStartOf="@id/guideline90"
+        app:layout_constraintStart_toEndOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCuisine" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_description_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_shadow_white"
+        android:textSize="@dimen/main_textSize_2x"
+        app:layout_constraintEnd_toStartOf="@id/guideline90"
+        app:layout_constraintStart_toEndOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/lblDescription" />
+
+    <ImageView
+        android:id="@+id/btnGoToSteps"
+        android:layout_marginBottom="@dimen/main_margin_3x"
+        android:layout_width="@dimen/main_next_size"
+        android:layout_height="@dimen/main_next_size"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline90"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline70H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

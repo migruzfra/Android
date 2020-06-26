@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_tips">
+        <item>Choose whole-grain bread and cereals. They are so much better than refined ones</item>
+        <item>Don\'t go shopping without a list. It will help you to not give in the impulse</item>
+        <item>The egg is one of the best protein you can eat</item>
+        <item>Exercise/workout everyday, but don\'t overdo it</item>
+        <item>Drink enough water, at least 2 liter per day</item>
+        <item>Bake or roast instead of grilling or frying</item>
+        <item>Order a healthy menu at the restaurant</item>
+        <item>Try at least one new healthy recipe per week</item>
+        <item>Choose baked potatoes over french fries</item>
+        <item>Eat your greens first. It will satiate you</item>
+        <item>Run away from juice: eat the fruit instead</item>
+        <item>Cook at home more often</item>
+        <item>Don\'t be lazy: Good nutrition and exercise often go hand in hand</item>
+        <item>Replace sugary beverages with water or sugar-free soda</item>
+        <item>Bake or roast instead of grilling or frying</item>
+    </string-array>
+</resources>
