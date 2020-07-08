@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    app:startDestination="@id/mainDestination">
+
+    <fragment
+        android:id="@+id/mainDestination"
+        android:name="es.miguelangelruz.starwarsuniverse.ui.main.MainFragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/navigateToCharacters"
+            app:destination="@id/charactersDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/charactersDestination"
+        android:name="es.miguelangelruz.starwarsuniverse.ui.main.CharactersFragment"
+        tools:layout="@layout/characters_fragment">
+        <action
+            android:id="@+id/navigateToCharacter"
+            app:destination="@id/characterDestination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterDestination"
+        android:name="es.miguelangelruz.starwarsuniverse.ui.characters.character.CharacterFragment"
+        tools:layout="@layout/character_fragment">
+        <argument
+            android:name="characterId"
+            app:argType="long"
+            android:defaultValue="1L" />
+    </fragment>
+</navigation>
