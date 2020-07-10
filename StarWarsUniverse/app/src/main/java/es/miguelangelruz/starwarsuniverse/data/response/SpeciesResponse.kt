@@ -14,13 +14,13 @@ data class SpeciesResponse(
     val edited: String,
     @SerializedName("eye_colors")
     val eyeColors: String,
-    val films: List<FilmResponse>,
+    val films: List<String>,
     @SerializedName("hair_colors")
     val hairColors: String,
     val homeworld: String,
     val language: String,
     val name: String,
-    val people: List<CharacterResponse>,
+    val people: List<String>,
     @SerializedName("skin_colors")
     val skinColors: String,
     val url: String

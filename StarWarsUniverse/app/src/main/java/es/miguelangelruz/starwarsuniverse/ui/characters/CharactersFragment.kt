@@ -11,7 +11,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import es.miguelangelruz.starwarsuniverse.R
 import es.miguelangelruz.starwarsuniverse.ui.characters.CharactersListAdapter
 import es.miguelangelruz.starwarsuniverse.ui.characters.CharactersViewModel
+import kotlinx.android.synthetic.main.character_fragment.*
 import kotlinx.android.synthetic.main.characters_fragment.*
+import kotlinx.android.synthetic.main.characters_fragment.gif_loading
+import kotlinx.android.synthetic.main.characters_fragment.layer_translucent
 
 class CharactersFragment : Fragment(R.layout.characters_fragment) {
 
@@ -60,6 +63,8 @@ class CharactersFragment : Fragment(R.layout.characters_fragment) {
         viewModel.listIsCompleted.observe(viewLifecycleOwner, Observer {
             if (it) {
                 hideLoadingAnimation()
+            } else {
+                showLoadingAnimation()
             }
         })
     }
@@ -71,6 +76,11 @@ class CharactersFragment : Fragment(R.layout.characters_fragment) {
     private fun hideLoadingAnimation() {
         layer_translucent.visibility = View.INVISIBLE
         gif_loading.visibility = View.INVISIBLE
+    }
+
+    private fun showLoadingAnimation() {
+        layer_translucent.visibility = View.VISIBLE
+        gif_loading.visibility = View.VISIBLE
     }
 
     private fun getCharacterId(position: Int) : Long {

@@ -14,32 +14,32 @@ interface SwapiApiService {
 
     // characters
     @GET("people/{id}/")
-    fun getCharacter(@Path("id") characterId: Int): Deferred<CharacterResponse>
+    fun queryCharacter(@Path("id") characterId: Long): Deferred<CharacterResponse>
     // all characters
     @GET("people/")
-    fun getAllCharacters(@Query("page") page: Int? = null): Deferred<AllCharactersResponse> //La primera página, sin parámetro page
+    fun queryAllCharacters(@Query("page") page: Int? = null): Deferred<AllCharactersResponse> //La primera página, sin parámetro page
     @GET("people/")
-    fun getAllCharacters(@Query("page") page: Int): Deferred<AllCharactersResponse> //sucesivas páginas, con parámetro page
+    fun queryAllCharacters(@Query("page") page: Int): Deferred<AllCharactersResponse> //sucesivas páginas, con parámetro page
 
     // films
     @GET("films/{id}/")
-    fun getFilm(@Path("id") filmdId: Int): Deferred<FilmResponse>
+    fun queryFilm(@Path("id") filmdId: Long): Deferred<FilmResponse>
 
     // planets
     @GET("planets/{id}/")
-    fun getPlanet(@Path("id") planetId: Int): Deferred<PlanetResponse>
+    fun queryPlanet(@Path("id") planetId: Long): Deferred<PlanetResponse>
 
     // species
     @GET("species/{id}/")
-    fun getSpecies(@Path("id") speciesId: Int): Deferred<SpeciesResponse>
+    fun querySpecies(@Path("id") speciesId: Long): Deferred<SpeciesResponse>
 
     // starships
     @GET("starships/{id}/")
-    fun getStarship(@Path("id") starshipId: Int): Deferred<StarshipResponse>
+    fun queryStarship(@Path("id") starshipId: Long): Deferred<StarshipResponse>
 
     // vehicles
     @GET("vehicles/{id}/")
-    fun getVehicle(@Path("id") vehicleId: Int): Deferred<VehicleResponse>
+    fun queryVehicle(@Path("id") vehicleId: Long): Deferred<VehicleResponse>
 
     companion object {
         operator fun invoke(): SwapiApiService {

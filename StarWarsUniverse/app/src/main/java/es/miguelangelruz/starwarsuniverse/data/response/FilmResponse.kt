@@ -4,7 +4,7 @@ package es.miguelangelruz.starwarsuniverse.data.response
 import com.google.gson.annotations.SerializedName
 
 data class FilmResponse(
-    val characters: List<CharacterResponse>,
+    val characters: List<String>,
     val created: String,
     val director: String,
     val edited: String,
@@ -12,13 +12,13 @@ data class FilmResponse(
     val episodeId: Int,
     @SerializedName("opening_crawl")
     val openingCrawl: String,
-    val planets: List<PlanetResponse>,
+    val planets: List<String>,
     val producer: String,
     @SerializedName("release_date")
     val releaseDate: String,
-    val species: List<SpeciesResponse>,
-    val starships: List<StarshipResponse>,
+    val species: List<String>,
+    val starships: List<String>,
     val title: String,
     val url: String,
-    val vehicles: List<VehicleResponse>
+    val vehicles: List<String>
 )

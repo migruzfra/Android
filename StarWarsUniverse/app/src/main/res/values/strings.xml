@@ -3,4 +3,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lbl_title_welcome">Welcome to Star Wars Universe</string>
+
+    <string name="character_name">Name: %s</string>
+    <string name="character_height">Height: %s</string>
+    <string name="character_weight">Weight: %s</string>
+    <string name="character_hair_color">Hair color: %s</string>
+    <string name="character_birth_year">Birth year: %s</string>
+    <string name="character_gender">Gender: %s</string>
+    <string name="character_homeworld">Homeworld: %s</string>
+    <string name="character_films">Films: %s</string>
 </resources>

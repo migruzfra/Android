@@ -18,7 +18,7 @@ class CharactersViewModel : ViewModel() {
     val listCharacters: LiveData<List<CharacterResponse>>
         get() = _listCharacters
 
-    private val _listIsCompleted: MutableLiveData<Boolean> = MutableLiveData(false)
+    private val _listIsCompleted: MutableLiveData<Boolean> = MutableLiveData()
     val listIsCompleted: LiveData<Boolean>
         get() = _listIsCompleted
 
@@ -26,16 +26,17 @@ class CharactersViewModel : ViewModel() {
 
 
     fun getCharacters() {
+        _listIsCompleted.value = false
         parentJob = CoroutineScope(Dispatchers.Main).launch {
             launch {
-                var allCharactersResponse = getAllCharacters().await()
+                var allCharactersResponse = queryAllCharacters().await()
                 val charactersQueriedSoFar: MutableList<CharacterResponse> =
                     allCharactersResponse.results.toMutableList()
                 _listCharacters.value = charactersQueriedSoFar
 
                 while (allCharactersResponse.next != null) {
                     val nextPage = allCharactersResponse.next!!.takeLast(1).toInt()
-                    allCharactersResponse = getAllCharacters(nextPage).await()
+                    allCharactersResponse = queryAllCharacters(nextPage).await()
                     charactersQueriedSoFar.addAll(allCharactersResponse.results)
                     _listCharacters.value = charactersQueriedSoFar.toList()
                 }
@@ -46,7 +47,6 @@ class CharactersViewModel : ViewModel() {
         }
     }
 
-    fun getCharacter(characterId: Int) = apiService.getCharacter(characterId)
-    fun getAllCharacters() = apiService.getAllCharacters()
-    fun getAllCharacters(page: Int) = apiService.getAllCharacters(page)
+    fun queryAllCharacters() = apiService.queryAllCharacters()
+    fun queryAllCharacters(page: Int) = apiService.queryAllCharacters(page)
 }

@@ -12,7 +12,7 @@ data class StarshipResponse(
     val created: String,
     val crew: String,
     val edited: String,
-    val films: List<FilmResponse>,
+    val films: List<String>,
     @SerializedName("hyperdrive_rating")
     val hyperdriveRating: String,
     val length: String,
@@ -24,7 +24,7 @@ data class StarshipResponse(
     val model: String,
     val name: String,
     val passengers: String,
-    val pilots: List<CharacterResponse>,
+    val pilots: List<String>,
     @SerializedName("starship_class")
     val starshipClass: String,
     val url: String

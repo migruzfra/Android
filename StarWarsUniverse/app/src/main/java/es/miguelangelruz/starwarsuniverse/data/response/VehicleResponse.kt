@@ -12,7 +12,7 @@ data class VehicleResponse(
     val created: String,
     val crew: String,
     val edited: String,
-    val films: List<FilmResponse>,
+    val films: List<String>,
     val length: String,
     val manufacturer: String,
     @SerializedName("max_atmosphering_speed")
@@ -20,7 +20,7 @@ data class VehicleResponse(
     val model: String,
     val name: String,
     val passengers: String,
-    val pilots: List<CharacterResponse>,
+    val pilots: List<String>,
     val url: String,
     @SerializedName("vehicle_class")
     val vehicleClass: String
