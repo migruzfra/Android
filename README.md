@@ -21,8 +21,6 @@ _Para descargar el proyecto y poder visualizarlo en tu PC_
 
 Descarga el repositorio de proyectos en Code -> Download ZIP y tendrás acceso a los proyectos para poder instalarlos e interactuar con ellos.
 
-## Autor ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+### Autor ✒️
 
 * **Miguel Ángel Ruz Franco** - [migruzfra](https://github.com/migruzfra)
