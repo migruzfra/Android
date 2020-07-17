@@ -15,7 +15,7 @@ _Consultar el procedimiento expuesto en el Readme perteneciente al repositorio_
 #### Agregar tareas
 
 Al iniciar la aplicación se nos muestra la pantalla principal vacía.
-![Imagen 1](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/1.jpg)
+![Imagen 1|20%](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/1.jpg)
 
 Para introducir una tarea, se escribe en el cuadro de texto de la parte inferior y se pulsa en el botón de agregar tarea.
 ![Imagen 2](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/2.jpg)
