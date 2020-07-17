@@ -15,44 +15,44 @@ _Consultar el procedimiento expuesto en el Readme perteneciente al repositorio_
 #### Agregar tareas
 
 Al iniciar la aplicación se nos muestra la pantalla principal vacía.
-![Imagen 1|20%](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/1.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/1.jpg" width=300>
 
 Para introducir una tarea, se escribe en el cuadro de texto de la parte inferior y se pulsa en el botón de agregar tarea.
-![Imagen 2](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/2.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/2.jpg" width=300>
 Comprobamos que indica la fecha de creación de la tarea.
 
 Se pueden incluir tantas tareas como se desee.
-![Imagen 3](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/3.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/3.jpg" width=300>
 
 Si pulsamos sobre una de ellas se marcará como completada, indicando la fecha de completación en el lugar donde se mostraba la de creación.
-![Imagen 4](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/4.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/4.jpg" width=300>
 
 Al pulsar sobre el menú de filtrado (primer icono de la barra de herramientas) podemos elegir qué filtro aplicar sobre las tareas.
 Podemos mostrarlas todas, mostrar solo las completadas o mostrar solo las pendientes. Por defecto está activada la primera de ellas.
-![Imagen 5](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/5.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/5.jpg" width=300>
 
 Si aplicamos el filtro de "solo pendientes" mostrará solo las pendientes.
-![Imagen 6](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/6.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/6.jpg" width=300>
 
 De la misma manera, si aplicamos el filtro de "solo completadas" mostrará solo las completadas.
-![Imagen 7](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/7.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/7.jpg" width=300>
 
 Al pulsar sobre el botón "compartir" (segundo icono de la barra de herramientas) podemos mandar las tareas que se estén visualizando en formato texto.
 Podremos compartirlas en redes sociales o mandarlas por correo.
-![Imagen 8](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/8.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/8.jpg" width=300>
 
 Al pulsar sobre el menú de acción (tercer icono de la barra de herramientas) podemos elegir qué acción realizar sobre las tareas.
 Podemos marcarlas todas como completadas, marcarlas todas como pendientes, o borrarlas.
-![Imagen 9](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/9.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/9.jpg" width=300>
 
 Si pulsamos en marcar todas como completadas aparecen todas completadas.
-![Imagen 10](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/10.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/10.jpg" width=300>
 
 Si pulsamos en marcar todas como pendientes aparecen todas pendientes.
-![Imagen 11](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/11.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/11.jpg" width=300>
 
 Si pulsamos en borrar, se eliminan todas las tareas.
-![Imagen 12](https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/12.jpg)
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/12.jpg" width=300>
 
 ## Autor ✒️
 
