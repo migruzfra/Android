@@ -24,8 +24,13 @@ Comprobamos que indica la fecha de creación de la tarea.
 Se pueden incluir tantas tareas como se desee.
 <br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/3.jpg" width=300>
 
-Si pulsamos sobre una de ellas se marcará como completada, indicando la fecha de completación en el lugar donde se mostraba la de creación.
+#### Marcar como completada / pendiente
+
+Si pulsamos sobre una tarea pendiente se marcará como completada, indicando la fecha de completación en el lugar donde se mostraba la de creación.
+Si pulsamos sobre una tarea completada volverá a estado pendiente, volviendo a indicar la fecha de creación
 <br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/4.jpg" width=300>
+
+#### Menú de filtrado
 
 Al pulsar sobre el menú de filtrado (primer icono de la barra de herramientas) podemos elegir qué filtro aplicar sobre las tareas.
 Podemos mostrarlas todas, mostrar solo las completadas o mostrar solo las pendientes. Por defecto está activada la primera de ellas.
@@ -37,9 +42,13 @@ Si aplicamos el filtro de "solo pendientes" mostrará solo las pendientes.
 De la misma manera, si aplicamos el filtro de "solo completadas" mostrará solo las completadas.
 <br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/7.jpg" width=300>
 
+#### Compartir tareas
+
 Al pulsar sobre el botón "compartir" (segundo icono de la barra de herramientas) podemos mandar las tareas que se estén visualizando en formato texto.
 Podremos compartirlas en redes sociales o mandarlas por correo.
 <br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/8.jpg" width=300>
+
+#### Menú de acción
 
 Al pulsar sobre el menú de acción (tercer icono de la barra de herramientas) podemos elegir qué acción realizar sobre las tareas.
 Podemos marcarlas todas como completadas, marcarlas todas como pendientes, o borrarlas.
