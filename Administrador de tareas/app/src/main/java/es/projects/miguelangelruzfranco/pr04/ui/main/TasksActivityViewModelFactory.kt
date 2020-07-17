@@ -1,0 +1,13 @@
+package es.projects.miguelangelruzfranco.pr04.ui.main
+
+import android.app.Application
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import es.projects.miguelangelruzfranco.pr04.data.Repository
+
+class TasksActivityViewModelFactory(val repository: Repository, private val application: Application) : ViewModelProvider.Factory {
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+        return TasksActivityViewModel(repository, application) as T
+    }
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="es.iessaladillo.pedrojoya.pr04"
+    package="es.projects.miguelangelruzfranco.pr04"
     tools:ignore="GoogleAppIndexingWarning">
 
     <application
@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
         android:fullBackupContent="@xml/backup_descriptor">
         <activity
-            android:name=".ui.main.TasksActivity"
+            android:name="es.projects.miguelangelruzfranco.pr04.ui.main.TasksActivity"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
