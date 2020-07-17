@@ -18,7 +18,7 @@ Al iniciar la aplicación se nos muestra la pantalla principal vacía.
 <br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/1.jpg" width=300>
 
 Para introducir una tarea, se escribe en el cuadro de texto de la parte inferior y se pulsa en el botón de agregar tarea.
-<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/2.jpg" width=300>
+<br><img src="https://raw.githubusercontent.com/migruzfra/Android-projects/master/Administrador%20de%20tareas/readme_imgs/2.jpg" width=300><br>
 Comprobamos que indica la fecha de creación de la tarea.
 
 Se pueden incluir tantas tareas como se desee.
