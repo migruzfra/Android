@@ -2,7 +2,7 @@
 
 ### Introducción 📋
 
-Este repositorio contiene código de aplicaciones Android que voy realizando. Siempre en constante evolución.
+_Este repositorio contiene código de aplicaciones Android que voy realizando. Siempre en constante evolución._
 
 Para la creación de mis proyectos utilizo:
 
